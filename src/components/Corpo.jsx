@@ -5,7 +5,7 @@ const Corpo = () => {
     return (
         <main>
             <div className='container'>
-                <div class='container-principal'>
+                <div className='container-principal'>
                     <Stories />
                     <Feeds />
                 </div>
