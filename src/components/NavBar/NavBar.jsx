@@ -1,4 +1,5 @@
-import Icone from "./Icone";
+import "./NavBar.css";
+import Icone from "../Icone/Icone";
 
 const NavBar = () => {
     return (
@@ -21,6 +22,13 @@ const NavBar = () => {
                     <Icone hrefIcon='#' nameIcon='heart-outline' classIcon='icones hidden' />
                     <Icone hrefIcon='#' nameIcon='person-outline' classIcon='icones hidden' />
                 </nav>
+            </div>
+            <div class='logo-responsive-mobile show'>
+                <ion-icon name='logo-instagram' class='logo-instagram'></ion-icon>
+
+                <img src='./assets/logo.png' />
+
+                <ion-icon name='navigate-outline' class='icones'></ion-icon>
             </div>
         </header>
     );

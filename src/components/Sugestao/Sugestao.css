@@ -1,0 +1,41 @@
+.perfil-seguir {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.perfil-foto-e-nome {
+    display: flex;
+}
+
+.perfil-foto-e-nome img {
+    width: 32px;
+    cursor: pointer;
+}
+
+.perfil-foto-e-nome div {
+    margin-left: 11px;
+}
+
+.perfil-foto-e-nome div h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.perfil-foto-e-nome div p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+    line-height: 16px;
+}
+.button-seguir {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #139ef2;
+    cursor: pointer;
+}

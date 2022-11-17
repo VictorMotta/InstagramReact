@@ -1,3 +1,4 @@
+import "./Feed.css";
 import React, { useState } from "react";
 
 const Feed = (props) => {

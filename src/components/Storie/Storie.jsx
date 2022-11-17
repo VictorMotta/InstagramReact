@@ -1,3 +1,4 @@
+import "./Storie.css";
 const Storie = (props) => {
     return (
         <div className={`storie ${props.classStorie}`}>

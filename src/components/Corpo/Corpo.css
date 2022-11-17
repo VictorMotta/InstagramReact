@@ -1,0 +1,31 @@
+main {
+    width: 100%;
+}
+
+.container {
+    width: 935px;
+    margin: 88px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-principal {
+    width: 614px;
+}
+
+@media (max-width: 935px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 614px) {
+    .container,
+    .container-principal {
+        width: 100%;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+}

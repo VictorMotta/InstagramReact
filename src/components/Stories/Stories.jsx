@@ -1,4 +1,5 @@
-import Storie from "./Storie";
+import "./Stories.css";
+import Storie from "../Storie/Storie";
 
 const Stories = () => {
     const users = [
@@ -64,7 +65,7 @@ const Stories = () => {
                         classStorie={user.storieClass}
                     />
                 ))}
-                <ion-icon name='chevron-forward-circle' class='icone-arrow hidden'></ion-icon>
+                <ion-icon name='chevron-forward-circle' class='icone-arrow'></ion-icon>
             </div>
         </div>
     );

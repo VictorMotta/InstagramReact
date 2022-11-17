@@ -1,0 +1,40 @@
+.storie {
+    width: 66px;
+    margin-left: 2.3%;
+    cursor: pointer;
+}
+
+.img-profile {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://raw.githubusercontent.com/VictorMotta/clone_instagram/master/img/stories_background.png);
+}
+
+.img-profile:nth-child(8) {
+    opacity: 0.5;
+}
+
+.nome-usuario-storie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nome-usuario-storie p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.storie p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.opacity {
+    opacity: 0.7;
+}

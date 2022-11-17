@@ -1,0 +1,23 @@
+.sugestoes-indice {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sugestoes-indice h1 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    color: #8e8e8e;
+}
+
+.sugestoes-indice p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    color: #262626;
+    cursor: pointer;
+}
+.sugestoes-perfis {
+    width: 100%;
+}

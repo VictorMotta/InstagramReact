@@ -1,4 +1,5 @@
-import Feed from "./Feed";
+import "./Feeds.css";
+import Feed from "../Feed/Feed";
 
 const Feeds = () => {
     const posts = [

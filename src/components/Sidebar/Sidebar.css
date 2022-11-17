@@ -1,0 +1,32 @@
+.container-side-bar {
+    width: 293px;
+    height: 500px;
+    position: sticky;
+    top: 40px;
+}
+
+.rodape {
+    margin-top: 33px;
+}
+.rodape h1,
+.rodape h1 a,
+.rodape h2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #c7c7c7;
+    line-height: 13px;
+}
+
+.rodape h2 {
+    margin-top: 18px;
+}
+
+.rodape h1 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 935px) {
+    .container-side-bar {
+        display: none;
+    }
+}
