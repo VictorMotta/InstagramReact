@@ -25,6 +25,7 @@ const Feed = (props) => {
         if (props.imgFeed.includes(".mp4") || props.imgFeed.includes(".ogv")) {
             return (
                 <video
+                    data-test='post-image'
                     width='100%'
                     onClick={toggleLike ? alterarCorValor : null}
                     autoPlay
@@ -39,6 +40,7 @@ const Feed = (props) => {
         } else {
             return (
                 <img
+                    data-test='post-image'
                     onClick={toggleLike ? alterarCorValor : null}
                     src={props.imgFeed}
                     className='img-feed'
@@ -48,7 +50,7 @@ const Feed = (props) => {
     }
 
     return (
-        <div key={props.idFeed} className='content-feed'>
+        <div data-test='post' key={props.idFeed} className='content-feed'>
             <div className='titulo'>
                 <a href={props.userLink}>
                     <div className='usuario'>
@@ -66,6 +68,7 @@ const Feed = (props) => {
                 <div className='actions'>
                     <div className='main-actions'>
                         <ion-icon
+                            data-test='like-post'
                             onClick={alterarCorValor}
                             name={toggleLike ? "heart-outline" : "heart"}
                             class='icones like-feed'
@@ -75,6 +78,7 @@ const Feed = (props) => {
                         <ion-icon name='navigate-outline' class='icones'></ion-icon>
                     </div>
                     <ion-icon
+                        data-test='save-post'
                         onClick={(e) => setToggleBookmark((state) => !state)}
                         name={!toggleBookmark ? "bookmark-outline" : "bookmark"}
                         class='icones bookmark'
@@ -83,7 +87,7 @@ const Feed = (props) => {
                 <div className='curtidas'>
                     <img src={props.imgUserLike} />
                     <p>
-                        Curtido por <strong>{props.nameUserLike}</strong> e
+                        Curtido por <strong data-test='likes-number'>{props.nameUserLike}</strong> e
                         <strong>
                             {likes > 1
                                 ? ` outras ${likes.toLocaleString("pt-BR")} pessoas`

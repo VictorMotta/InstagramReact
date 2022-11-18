@@ -13,9 +13,10 @@ const Profile = () => {
     }
 
     return (
-        <div className='profile-principal'>
+        <div data-test='user' className='profile-principal'>
             <a href='#'>
                 <img
+                    data-test='profile-image'
                     onClick={changeImage}
                     src={!imageUser ? "./assets/catanacomics.png" : imageUser}
                 />
@@ -23,9 +24,9 @@ const Profile = () => {
             <div className='nome-profile-principal'>
                 <h1>catacomics</h1>
 
-                <p>
+                <p data-test='name'>
                     {!nameUser ? "Catana" : nameUser}{" "}
-                    <ion-icon onClick={changeName} name='pencil'></ion-icon>
+                    <ion-icon data-test='edit-name' onClick={changeName} name='pencil'></ion-icon>
                 </p>
             </div>
         </div>
