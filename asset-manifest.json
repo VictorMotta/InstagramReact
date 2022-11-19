@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projeto7-instagramreact/static/css/main.b7d34292.css",
+    "main.js": "/projeto7-instagramreact/static/js/main.e948606d.js",
+    "index.html": "/projeto7-instagramreact/index.html",
+    "main.b7d34292.css.map": "/projeto7-instagramreact/static/css/main.b7d34292.css.map",
+    "main.e948606d.js.map": "/projeto7-instagramreact/static/js/main.e948606d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7d34292.css",
+    "static/js/main.e948606d.js"
+  ]
+}
