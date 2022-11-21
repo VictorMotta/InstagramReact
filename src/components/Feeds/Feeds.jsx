@@ -24,7 +24,7 @@ const Feeds = () => {
             imgFeedPost: "./assets/dog.png",
             imgUserLikePost: "./assets/adorableanimals.png",
             nameUserLikePost: "adorable_animals",
-            amountLikesPost: "99.159",
+            amountLikesPost: "99159",
             userComentFriendPost: "respondeai",
             aComentFriendPost: "Um Cachorro lindo dormindo s2!!",
             wlpVideo: false,

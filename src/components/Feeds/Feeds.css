@@ -2,3 +2,31 @@
     width: 100%;
     margin-top: 24px;
 }
+.imagem-feed {
+    position: relative;
+}
+
+.img-feed {
+    z-index: 1;
+}
+.animar {
+    color: transparent;
+    font-size: 150px;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    z-index: -1;
+    transform: scale(0.2);
+}
+
+.animate {
+    animation: scale 0.3s forwards;
+}
+
+@keyframes scale {
+    to {
+        z-index: 1;
+        color: white;
+        transform: scale(1);
+    }
+}

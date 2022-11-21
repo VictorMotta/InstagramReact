@@ -1,13 +1,14 @@
 import "./Feed.css";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Feed = (props) => {
-    const [likes, setLikes] = React.useState(Number(props.amountLikes));
-    const [toggleLike, setToggleLike] = React.useState(true);
-    const [corLike, setCorLike] = React.useState("#000000");
-    const [toggleBookmark, setToggleBookmark] = React.useState(false);
+    const [likes, setLikes] = useState(Number(props.amountLikes));
+    const [toggleLike, setToggleLike] = useState(true);
+    const [corLike, setCorLike] = useState("#000000");
+    const [toggleBookmark, setToggleBookmark] = useState(false);
+    const [classHeart, setClasseHeart] = useState("animar");
 
-    React.useEffect(() => {
+    useEffect(() => {
         setCorLike((state) => (!toggleLike ? "#FF0000" : "#000000"));
     }, [toggleLike]);
 
@@ -21,13 +22,22 @@ const Feed = (props) => {
         }
     }
 
+    function doubleClickImg() {
+        if (toggleLike) {
+            alterarCorValor();
+            setClasseHeart("animar animate md hydrated");
+            setTimeout(() => setClasseHeart("animar md hydrated"), 500);
+        }
+    }
+
     function videoOrImg() {
         if (props.imgFeed.includes(".mp4") || props.imgFeed.includes(".ogv")) {
             return (
                 <video
+                    className='img-feed'
                     data-test='post-image'
                     width='100%'
-                    onClick={toggleLike ? alterarCorValor : null}
+                    onDoubleClick={doubleClickImg}
                     autoPlay
                     muted
                     loop
@@ -41,7 +51,7 @@ const Feed = (props) => {
             return (
                 <img
                     data-test='post-image'
-                    onClick={toggleLike ? alterarCorValor : null}
+                    onDoubleClick={doubleClickImg}
                     src={props.imgFeed}
                     className='img-feed'
                 />
@@ -61,9 +71,10 @@ const Feed = (props) => {
 
                 <ion-icon name='ellipsis-horizontal' class='icones'></ion-icon>
             </div>
-
-            {videoOrImg()}
-
+            <div className='imagem-feed'>
+                {videoOrImg()}
+                <ion-icon name='heart' class={classHeart}></ion-icon>
+            </div>
             <div className='footer-feed'>
                 <div className='actions'>
                     <div className='main-actions'>
