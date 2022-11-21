@@ -2,8 +2,8 @@ import "./SideBarMenuBottom.css";
 
 const SideBarMenuBottom = () => {
     return (
-        <div class='side-bar-menu-responsive'>
-            <div class='menu-bottom'>
+        <div className='side-bar-menu-responsive'>
+            <div className='menu-bottom'>
                 <ion-icon name='home' class='icones'></ion-icon>
 
                 <ion-icon name='search-outline' class='icones'></ion-icon>

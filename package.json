@@ -10,12 +10,12 @@
         "react-scripts": "^5.0.1",
         "yarn": "^1.22.19"
     },
-    "homepage": "https://victormotta.github.io/projeto7-instagramreact/",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {

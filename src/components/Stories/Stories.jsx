@@ -59,6 +59,7 @@ const Stories = () => {
             <div className='content-stories'>
                 {users.map((user) => (
                     <Storie
+                        key={user.name}
                         hrefStorie={user.href}
                         imageStorie={user.image}
                         userNameStorie={user.name}

@@ -23,7 +23,7 @@ const NavBar = () => {
                     <Icone hrefIcon='#' nameIcon='person-outline' classIcon='icones hidden' />
                 </nav>
             </div>
-            <div class='logo-responsive-mobile show'>
+            <div className='logo-responsive-mobile show'>
                 <ion-icon name='logo-instagram' class='logo-instagram'></ion-icon>
 
                 <img src='./assets/logo.png' />

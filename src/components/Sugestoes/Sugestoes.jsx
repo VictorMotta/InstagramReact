@@ -38,6 +38,7 @@ const Sugestoes = () => {
             <div className='sugestoes-perfis'>
                 {friendsSuggest.map((friendSuggest) => (
                     <Sugestao
+                        key={friendSuggest.nameUser}
                         imageUserSuggest={friendSuggest.imageUser}
                         nameUserSuggest={friendSuggest.nameUser}
                         unusualSuggest={friendSuggest.unusualUser}

@@ -48,6 +48,7 @@ const Feeds = () => {
         <div className='container-feed'>
             {posts.map((post) => (
                 <Feed
+                    key={post.id}
                     idFeed={post.id}
                     userLink={post.userLinkPost}
                     imgUser={post.imgUserPost}
